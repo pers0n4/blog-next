@@ -1,4 +1,15 @@
 node_modules/
+
+# Gatsby
 .cache/
 public
 src/gatsby-types.d.ts
+
+# yarn berry not using Zero-Installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
