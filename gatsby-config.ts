@@ -13,6 +13,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-top-layout",
+    "gatsby-plugin-mui-emotion",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
