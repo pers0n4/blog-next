@@ -1,5 +1,7 @@
 node_modules/
 
+.eslintcache
+
 # Gatsby
 .cache/
 public
