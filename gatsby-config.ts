@@ -12,6 +12,7 @@ const config: GatsbyConfig = {
   plugins: [
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-top-layout",
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
