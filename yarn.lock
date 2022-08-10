@@ -5536,6 +5536,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-direct-import@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "babel-plugin-direct-import@npm:1.0.0"
+  dependencies:
+    resolve: ^1.20.0
+  checksum: f40b69a76c4c36d41c5dca9c8af3ad6334f234d3d6ee33be5fd89ee5e69b994da5a4fd90e4db5134496e07c5810a4024b58d52cea615be32b69d0ba87eba8bc5
+  languageName: node
+  linkType: hard
+
 "babel-plugin-dynamic-import-node@npm:^2.3.3":
   version: 2.3.3
   resolution: "babel-plugin-dynamic-import-node@npm:2.3.3"
@@ -5821,6 +5830,7 @@ __metadata:
     "@types/react-helmet": 6.1.5
     "@typescript-eslint/eslint-plugin": ^5.29.0
     "@typescript-eslint/parser": ^5.29.0
+    babel-plugin-direct-import: ^1.0.0
     eslint: ^8.18.0
     eslint-config-airbnb: ^19.0.4
     eslint-config-airbnb-typescript: ^17.0.0
