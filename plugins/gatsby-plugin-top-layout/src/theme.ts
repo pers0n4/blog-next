@@ -1,6 +1,8 @@
 import { createTheme as createMuiTheme } from "@mui/material";
 
-import type { PaletteMode, PaletteOptions } from "@mui/material";
+import Link from "./Link";
+
+import type { PaletteMode, PaletteOptions, LinkProps } from "@mui/material";
 
 const dark: PaletteOptions = {
   primary: {
@@ -30,5 +32,17 @@ export const createTheme = (mode: PaletteMode) =>
     palette: {
       mode,
       ...palette[mode],
+    },
+    components: {
+      MuiLink: {
+        defaultProps: {
+          component: Link,
+        } as LinkProps,
+      },
+      MuiButtonBase: {
+        defaultProps: {
+          LinkComponent: Link,
+        },
+      },
     },
   });
