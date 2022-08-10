@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Box from "@mui/material/Box";
+import { Box } from "@mui/material";
 
 import AppBarDrawer from "./AppBarDrawer";
 import AppContainer from "./AppContainer";

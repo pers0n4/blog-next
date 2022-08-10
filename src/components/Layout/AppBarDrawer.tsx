@@ -1,20 +1,26 @@
 import * as React from "react";
 
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
-import MenuIcon from "@mui/icons-material/Menu";
-import MuiAppBar from "@mui/material/AppBar";
-import Divider from "@mui/material/Divider";
-import MuiDrawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import { styled } from "@mui/material/styles";
+import {
+  ChevronLeft as ChevronLeftIcon,
+  Menu as MenuIcon,
+} from "@mui/icons-material";
+import {
+  AppBar as MuiAppBar,
+  Divider,
+  Drawer as MuiDrawer,
+  IconButton,
+  Toolbar,
+  Typography,
+  styled,
+} from "@mui/material";
 import { useStaticQuery, graphql } from "gatsby";
 
 import { AppBarMenu, AppDrawerMenu } from "./AppMenu";
 
-import type { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
-import type { IconButtonProps } from "@mui/material/IconButton";
+import type {
+  IconButtonProps,
+  AppBarProps as MuiAppBarProps,
+} from "@mui/material";
 
 const drawerWidth = 240;
 const iconSize = 24;

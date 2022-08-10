@@ -1,20 +1,23 @@
 import * as React from "react";
 
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-import CategoryIcon from "@mui/icons-material/Category";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import HomeIcon from "@mui/icons-material/Home";
-import LabelIcon from "@mui/icons-material/Label";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import Stack from "@mui/material/Stack";
-import Tooltip from "@mui/material/Tooltip";
-import { useTheme } from "@mui/material/styles";
-import { Link } from "gatsby";
+import {
+  Brightness4 as Brightness4Icon,
+  Brightness7 as Brightness7Icon,
+  Category as CategoryIcon,
+  GitHub as GitHubIcon,
+  Home as HomeIcon,
+  Label as LabelIcon,
+} from "@mui/icons-material";
+import {
+  IconButton,
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Stack,
+  useTheme,
+  Tooltip,
+} from "@mui/material";
 
 import { ColorModeContext } from "plugins/gatsby-plugin-top-layout/src/TopLayout";
 
@@ -43,19 +46,19 @@ export function AppBarMenu() {
 export function AppDrawerMenu() {
   return (
     <List component="nav">
-      <ListItemButton component={Link} to="/">
+      <ListItemButton href="/">
         <ListItemIcon>
           <HomeIcon />
         </ListItemIcon>
         <ListItemText primary="Home" />
       </ListItemButton>
-      <ListItemButton component={Link} to="/categories">
+      <ListItemButton href="/categories">
         <ListItemIcon>
           <CategoryIcon />
         </ListItemIcon>
         <ListItemText primary="Categories" />
       </ListItemButton>
-      <ListItemButton component={Link} to="/labels">
+      <ListItemButton href="/labels">
         <ListItemIcon>
           <LabelIcon />
         </ListItemIcon>
