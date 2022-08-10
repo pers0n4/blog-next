@@ -19,6 +19,7 @@ import {
   useTheme,
   Tooltip,
 } from "@mui/material";
+import { Link } from "gatsby";
 
 import { ColorModeContext } from "plugins/gatsby-plugin-top-layout/src/TopLayout";
 
@@ -51,25 +52,25 @@ export function AppBarMenu() {
 export function AppDrawerMenu() {
   return (
     <List component="nav" sx={{ paddingTop: 0 }}>
-      <ListItemButton href="/">
+      <ListItemButton component={Link} to="/">
         <ListItemIcon>
           <HomeIcon />
         </ListItemIcon>
         <ListItemText primary="Home" />
       </ListItemButton>
-      <ListItemButton href="/articles">
+      <ListItemButton component={Link} to="/articles">
         <ListItemIcon>
           <ArticleIcon />
         </ListItemIcon>
         <ListItemText primary="Articles" />
       </ListItemButton>
-      <ListItemButton href="/categories">
+      <ListItemButton component={Link} to="/categories">
         <ListItemIcon>
           <CategoryIcon />
         </ListItemIcon>
         <ListItemText primary="Categories" />
       </ListItemButton>
-      <ListItemButton href="/labels">
+      <ListItemButton component={Link} to="/labels">
         <ListItemIcon>
           <LabelIcon />
         </ListItemIcon>
