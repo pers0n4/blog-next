@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import {
+  Article as ArticleIcon,
   Brightness4 as Brightness4Icon,
   Brightness7 as Brightness7Icon,
   Category as CategoryIcon,
@@ -30,7 +31,11 @@ export function AppBarMenu() {
   return (
     <Stack direction="row" spacing={1}>
       <Tooltip title="GitHub profile">
-        <IconButton color="inherit">
+        <IconButton
+          color="inherit"
+          href="https://github.com/pers0n4"
+          target="_blank"
+        >
           <GitHubIcon />
         </IconButton>
       </Tooltip>
@@ -45,12 +50,18 @@ export function AppBarMenu() {
 
 export function AppDrawerMenu() {
   return (
-    <List component="nav">
+    <List component="nav" sx={{ paddingTop: 0 }}>
       <ListItemButton href="/">
         <ListItemIcon>
           <HomeIcon />
         </ListItemIcon>
         <ListItemText primary="Home" />
+      </ListItemButton>
+      <ListItemButton href="/articles">
+        <ListItemIcon>
+          <ArticleIcon />
+        </ListItemIcon>
+        <ListItemText primary="Articles" />
       </ListItemButton>
       <ListItemButton href="/categories">
         <ListItemIcon>
